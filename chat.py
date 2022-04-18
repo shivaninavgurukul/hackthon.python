@@ -17,6 +17,13 @@ def send():
         txt.insert(END,"\n"+"\t"*8+"Find and you")
     elif(e.get()=="fine"):
         txt.insert(END,"\n"+"\t"*8+"Nice to hear") 
+    elif(e.get()=="what are you doing today"):
+        txt.insert(END,"\n"+"\t"*6+"celebrating brain curd") 
+    elif(e.get()=="Tell about the life of navgurukul"):
+        txt.insert(END,"\n"+"\t"*5+"Autumn in savannah and savannah in autumn") 
+    elif(e.get()=="what have you learned in Navgurukul"):
+        txt.insert(END,"\n"+"\t"*6+"we have learned many new things in Navgurukul")     
+
     else:
         txt.insert(END,"\n"+"\t"*7+"Sorry i didnt get it") 
     e.delete(0,END)
@@ -34,8 +41,8 @@ send=Button(root,text="Send",command=send).grid(row=1,column=2)
 # "grid :- it gives us to geomatrically structure row and column ke liye"
 e.grid(row=1,column=0)
 root.title("CHAT BOT")
-# root['bg']='pink'
+# root['fg']='blue'
 root.mainloop()
 # "mainloop:- without mainloop use your code is not working"
 
-
+# "https://github.com/shivaninavgurukul/hackthon.python/commit/2c2fc07ba51152f6450b8774248aec5eea7fa451"
